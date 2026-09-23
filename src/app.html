@@ -5,6 +5,12 @@
     <link rel="icon" href="%sveltekit.assets%/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>PassoKlon</title>
+    <script>
+      // Adım 15: Sayfa çizilmeden önce temayı uygula (açılışta renk "yanıp sönmesin")
+      document.documentElement.dataset.tema =
+        localStorage.getItem("tema") ??
+        (matchMedia("(prefers-color-scheme: dark)").matches ? "gece" : "gunduz");
+    </script>
     %sveltekit.head%
   </head>
   <body data-sveltekit-preload-data="hover">

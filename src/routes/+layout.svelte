@@ -3,6 +3,7 @@
   import "../app.css";
   import { page } from "$app/state";
   import { sepet } from "$lib/sepet.svelte";
+  import { tema } from "$lib/tema.svelte";
 
   let { children } = $props();
 
@@ -16,6 +17,14 @@
 
 <header class="ust">
   <a href="/" class="logo">passo<span>klon</span></a>
+  <!-- Adım 15: gece / gündüz modu düğmesi -->
+  <button
+    class="tema-dugme"
+    onclick={() => tema.degistir()}
+    aria-label={tema.mod === "gece" ? "Gündüz moduna geç" : "Gece moduna geç"}
+  >
+    {tema.mod === "gece" ? "☀️" : "🌙"}
+  </button>
 </header>
 
 <main>
@@ -37,6 +46,9 @@
 
 <style>
   .ust {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -53,6 +65,15 @@
 
   .logo span {
     color: var(--renk-ana);
+  }
+
+  .tema-dugme {
+    width: 38px;
+    height: 38px;
+    border: 1px solid #ffffff33;
+    border-radius: 50%;
+    background: #ffffff14;
+    font-size: 18px;
   }
 
   main {
