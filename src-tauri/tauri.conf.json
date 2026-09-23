@@ -12,9 +12,9 @@
   "app": {
     "windows": [
       {
-        "title": "hello-mobil",
-        "width": 800,
-        "height": 600
+        "title": "PassoKlon",
+        "width": 420,
+        "height": 820
       }
     ],
     "security": {
