@@ -51,7 +51,7 @@ Aşağıdaki şablonu kopyalayarak kendi deponuzun ana dizinindeki `README.md` d
 - [Özellikler](#-özellikler)
 - [Teknoloji Yığını](#-teknoloji-yığını)
 - [Kurulum ve Çalıştırma](#-kurulum-ve-çalıştırma)
-- [Klasör Yapısı](#-klasör-yapısı)
+- [Klasör Mimarisi](docs/klasor-mimarisi.md)
 - [Lisans](#-lisans)
 
 ---
@@ -130,18 +130,11 @@ bun run build
 
 ---
 
-## 📂 Klasör Yapısı
+## 📂 Klasör Mimarisi
 
-```
-src/
-├── components/          # Svelte ve React UI bileşenleri
-├── layouts/             # Astro sayfa şablonları (Layout.astro)
-├── lib/                 # Veri modelleri, state store'ları ($state)
-├── pages/               # Astro dosya tabanlı sayfalar (.astro, .mdx)
-└── styles/              # Global stiller ve tema değişkenleri
-src-tauri/               # Rust Tauri backend çekirdeği (komutlar)
-docs/                    # Görevler, mimari ve marka dokümanları
-```
+Projenin modül dağılımı ve dizin sorumlulukları için [`docs/klasor-mimarisi.md`](docs/klasor-mimarisi.md) dokümanını inceleyin.
+
+> ⚠️ **Dokümantasyon Kuralı:** Klasör ağacı README içine kopyalanmaz; `docs/klasor-mimarisi.md` dokümanına link verilir. Tekrardan kaçınılmalı, tek doğru kaynak (Single Source of Truth) korunmalıdır.
 
 ---
 

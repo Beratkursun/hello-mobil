@@ -35,7 +35,7 @@
 - [Temel Yetenekler](#-temel-yetenekler)
 - [Teknoloji Yığını](#-teknoloji-yığını)
 - [Kurulum ve Çalıştırma](#-kurulum-ve-çalıştırma)
-- [Klasör Mimarisi](#-klasör-mimarisi)
+- [Klasör Mimarisi](docs/klasor-mimarisi.md)
 - [Haftalık Görevler](#-haftalık-görevler)
 - [Lisans](#-lisans)
 
@@ -151,46 +151,7 @@ bun run build
 
 ## 📂 Klasör Mimarisi
 
-```
-hello-mobil/
-├── public/                  # Statik varlıklar (İstinye logosu, favicon, svg simgeleri)
-├── src/
-│   ├── components/          # Svelte ve React UI bileşenleri
-│   │   ├── AppHeader.svelte # Logo ve gece/gündüz modu butonu
-│   │   ├── AppNav.svelte    # Rozetli alt gezinme menüsü
-│   │   ├── Kesfet.svelte    # Ana sayfa arama ve listeleme
-│   │   ├── Sepet.svelte     # Sepet yönetimi
-│   │   ├── Biletlerim.svelte# Bilet listesi
-│   │   ├── Profil.svelte    # Profil ve ayarlar
-│   │   └── react/           # React bileşenleri (CanliRozet.tsx)
-│   ├── layouts/
-│   │   └── Layout.astro     # Ana Astro sayfa şablonu & ClientRouter
-│   ├── lib/
-│   │   ├── data.ts          # Etkinlik ve kategori mock verileri
-│   │   ├── biletler.svelte.ts # Rust invoke("bilet_olustur") ve yerel saklama
-│   │   ├── sepet.svelte.ts  # Sepet durumu ($state, $derived)
-│   │   └── tema.svelte.ts   # Gece/Gündüz tema yöneticisi
-│   ├── pages/               # Astro dosya tabanlı yönlendirme
-│   │   ├── index.astro      # Keşfet ekranı
-│   │   ├── sepet.astro      # Sepet ekranı
-│   │   ├── biletlerim.astro # Biletler ekranı
-│   │   ├── profil.astro     # Profil ekranı
-│   │   ├── etkinlik/
-│   │   │   └── [id].astro   # Dinamik etkinlik detay sayfası (getStaticPaths)
-│   │   └── hakkinda.mdx     # MDX formatında rehber sayfası
-│   └── styles/
-│       └── app.css          # Marka CSS değişkenleri ve global stiller
-├── src-tauri/               # Rust Tauri backend çekirdeği
-│   ├── src/lib.rs           # bilet_olustur tauri komutu ve uygulama girişi
-│   ├── Cargo.toml           # Rust bağımlılıkları
-│   └── tauri.conf.json      # Pencere, güvenlik ve derleme ayarları
-├── docs/
-│   └── tasks/week-3/        # Hafta 3 uzaktan çalışma ve görev kılavuzları
-├── astro.config.mjs         # Astro + Svelte + React + MDX yapılandırması
-├── svelte.config.js         # Svelte ön işlemci ayarları
-├── tsconfig.json            # TypeScript ve $lib alias tanımları
-└── package.json             # Proje script'leri ve bağımlılıklar
-```
+Projenin modül dağılımı, dizin sorumlulukları ve dosya hiyerarşisi için [**`docs/klasor-mimarisi.md`**](docs/klasor-mimarisi.md) dokümanını inceleyin. *(Dokümantasyon kuralı: Dizin yapısı README içinde yinelenmez, tek kaynak olarak `docs/` altında tutulur.)*
 
 ---
 
