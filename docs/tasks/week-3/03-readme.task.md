@@ -72,9 +72,10 @@ Aşağıdaki şablonu kopyalayarak kendi deponuzun ana dizinindeki `README.md` d
 
 <div align="center">
 
-[![İstinye Üniversitesi](https://img.shields.io/badge/İstinye%20Üniversitesi-MYO%20Bilişim%20Güvenliği-002855?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.istinye.edu.tr)
+[![İSÜ](https://img.shields.io/badge/İSÜ-İSTİNYE_ÜNİVERSİTESİ-0080BB?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.istinye.edu.tr)
 [![MYO063](https://img.shields.io/badge/MYO063-Mobil%20Programlama-FF6F00?style=for-the-badge&logo=dart&logoColor=white)](#)
 [![Dönem](https://img.shields.io/badge/Dönem-2026--2027%20Güz-007ACC?style=for-the-badge)](#)
+[![Qrofessor](https://img.shields.io/badge/Qrofessor-qrofessor.com-4361EE?style=for-the-badge&logo=google-chrome&logoColor=white)](https://qrofessor.com)
 [![Telegram](https://img.shields.io/badge/Telegram-App%20Development%202026-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/+w1EVvAU65CQ3ODA0)
 
 </div>
@@ -83,13 +84,14 @@ Aşağıdaki şablonu kopyalayarak kendi deponuzun ana dizinindeki `README.md` d
 
 | Kategori | Parametre | Değer / Bilgi | Hızlı Erişim |
 |:---|:---|:---|:---:|
-| 🏛️ **Kurum** | Üniversite | **İstinye Üniversitesi** | [istinye.edu.tr ↗](https://www.istinye.edu.tr) |
-| | Birim / Program | Meslek Yüksekokulu — Bilişim Güvenliği Teknolojisi | — |
+| 🏛️ **Kurum** | Üniversite | **İstinye Üniversitesi** *(İSÜ · İstanbul)* | [🌐 **istinye.edu.tr** ↗](https://www.istinye.edu.tr) |
+| | Birim / Program | Meslek Yüksekokulu — Bilişim Güvenliği Teknolojisi | [MYO Portalı ↗](https://myo.istinye.edu.tr) |
 | 📚 **Ders** | Ders Kodu & Adı | `MYO063` · **Mobil Programlama** *(App Development)* | [Müfredat](docs/klasor-mimarisi.md) |
 | | Akademik Dönem | `2026-2027 Güz` | — |
 | | Ders Saati | Her Çarşamba `15:30 – 17:10` *(Haftalık 2 Saat)* | — |
 | | Derslik & Lab | **T-1B03** *(PC Laboratuvarı · Topkapı Kampüsü)* | Kampüs Planı |
 | 🌐 **Portallar** | Blackboard LMS | Kurs Kodu: `2026–2027–1–11283–1` | [Blackboard ↗](https://istinye.blackboard.com) |
+| | Kişisel / Platform | **Qrofessor Akademik Hub** | [🚀 **qrofessor.com** ↗](https://qrofessor.com) |
 | | Topluluk | **App Development - 2026** | [Telegram Kanalı ↗](https://t.me/+w1EVvAU65CQ3ODA0) |
 | | Kaynak Depo | `keyvanarasteh/hello-mobil` | [GitHub Repo ↗](https://github.com/keyvanarasteh/hello-mobil) |
 
@@ -103,11 +105,13 @@ Aşağıdaki şablonu kopyalayarak kendi deponuzun ana dizinindeki `README.md` d
 
 <p>
   <b>Öğr. Gör. Keyvan Arasteh Abbasabad</b><br>
-  <i>Meslek Yüksekokulu — Bilişim Güvenliği Teknolojisi</i>
+  <i>İstinye Üniversitesi Meslek Yüksekokulu</i><br>
+  <i>Bilişim Güvenliği Teknolojisi Programı</i>
 </p>
 
 <p>
-  <a href="https://www.istinye.edu.tr" target="_blank"><img src="https://img.shields.io/badge/İstinye-Akademik_Profil-002855?style=flat-square&logo=google-chrome&logoColor=white" height="22" alt="İstinye Profil"></a>
+  <a href="https://qrofessor.com" target="_blank"><img src="https://img.shields.io/badge/Web-qrofessor.com-4361EE?style=flat-square&logo=google-chrome&logoColor=white" height="22" alt="qrofessor.com"></a>
+  <a href="https://www.istinye.edu.tr" target="_blank"><img src="https://img.shields.io/badge/İSÜ-Akademik_Profil-0080BB?style=flat-square&logo=google-chrome&logoColor=white" height="22" alt="İstinye Profil"></a>
   <a href="https://github.com/keyvanarasteh" target="_blank"><img src="https://img.shields.io/badge/GitHub-keyvanarasteh-181717?style=flat-square&logo=github&logoColor=white" height="22" alt="GitHub"></a>
   <a href="https://www.linkedin.com/in/keyvanarasteh/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Keyvan_Arasteh-0A66C2?style=flat-square&logo=linkedin&logoColor=white" height="22" alt="LinkedIn"></a>
 </p>
