@@ -11,21 +11,20 @@
 <br><br>
 
 # PassoKlon — Mobil Programlama
-### İstinye Üniversitesi · Meslek Yüksekokulu · Bilişim Güvenliği Teknolojisi
+<sub>İstinye Üniversitesi · Meslek Yüksekokulu</sub>
 
-[![İstinye Üniversitesi](https://img.shields.io/badge/%C4%B0stinye%20%C3%9Cniversitesi-MYO-002855.svg)](https://www.istinye.edu.tr)
-[![Ders](https://img.shields.io/badge/Ders-MYO063%20Mobil%20Programlama-e4002b.svg)](#)
-[![Dönem](https://img.shields.io/badge/D%C3%B6nem-2026--2027%20G%C3%BCz-blue.svg)](#)
-[![Tauri v2](https://img.shields.io/badge/Tauri-v2-FFC131?logo=tauri&logoColor=white)](https://v2.tauri.app/)
-[![Astro](https://img.shields.io/badge/Astro-v5%2Fv7-BC52EE?logo=astro&logoColor=white)](https://astro.build/)
-[![Svelte 5](https://img.shields.io/badge/Svelte-5%20Runes-FF3E00?logo=svelte&logoColor=white)](https://svelte.dev/)
-[![React 19](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)](https://react.dev/)
-[![Bun](https://img.shields.io/badge/Bun-1.3-black?logo=bun&logoColor=white)](https://bun.sh/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-
-<p align="center">
-  <b>Tauri v2 (Rust)</b> çekirdeği ve <b>Astro</b> web çatısı üzerinde geliştirilen,<br>
-  <b>Svelte 5 Runes</b>, <b>React</b> ve <b>MDX</b> çoklu çatı desteğine sahip hibrit mobil/masaüstü etkinlik uygulaması.
+<p>
+  <a href="#"><img alt="İSTİNYE ÜNİVERSİTESİ İSTANBUL" src="https://img.shields.io/badge/%C4%B0ST%C4%B0NYE%20%C3%9CN%C4%B0VERS%C4%B0TES%C4%B0-%C4%B0STANBUL-002855?style=for-the-badge"></a>
+  <a href="#"><img alt="MYO063 MOBİL PROGRAMLAMA" src="https://img.shields.io/badge/MYO063-MOB%C4%B0L%20PROGRAMLAMA-e4002b?style=for-the-badge"></a>
+  <a href="#"><img alt="DÖNEM 2026-2027 GÜZ" src="https://img.shields.io/badge/D%C3%96NEM-2026--2027%20G%C3%9CZ-2563eb?style=for-the-badge"></a>
+</p>
+<p>
+  <a href="#"><img alt="Tauri v2" src="https://img.shields.io/badge/Tauri-v2-FFC131?style=for-the-badge&logo=tauri&logoColor=white"></a>
+  <a href="#"><img alt="Astro v5" src="https://img.shields.io/badge/Astro-v5-BC52EE?style=for-the-badge&logo=astro&logoColor=white"></a>
+  <a href="#"><img alt="Svelte 5" src="https://img.shields.io/badge/Svelte-5-FF3E00?style=for-the-badge&logo=svelte&logoColor=white"></a>
+  <a href="#"><img alt="React 19" src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black"></a>
+  <a href="#"><img alt="Bun 1.3" src="https://img.shields.io/badge/Bun-1.3-000000?style=for-the-badge&logo=bun&logoColor=black"></a>
+  <a href="#"><img alt="License Apache-2.0" src="https://img.shields.io/badge/License-Apache--2.0-blue?style=for-the-badge"></a>
 </p>
 
 </div>
@@ -63,7 +62,7 @@
 | **Kurum** | [**İstinye Üniversitesi**](https://www.istinye.edu.tr) &nbsp;·&nbsp; [**www.istinye.edu.tr ↗**](https://www.istinye.edu.tr) |
 | **Birim / Program** | **Meslek Yüksekokulu** — Bilişim Güvenliği Teknolojisi |
 | **Ders Kodu & Adı** | `MYO063` — **Mobil Programlama** *(App Development)* |
-| **Dönem** | `2026-2027 Güz` |
+| **Dönem** | `2026--2027 Güz` |
 | **Ders Saati & Derslik** | Her Çarşamba `15:30 – 17:10` &nbsp;·&nbsp; **T-1B03** *(PC Lab.)* |
 | **Öğretim Görevlisi** | **Öğr. Gör. Keyvan Arasteh Abbasabad**<br>([Web: qrofessor.com ↗](https://qrofessor.com) &nbsp;·&nbsp; [İSÜ Profil ↗](https://www.istinye.edu.tr) &nbsp;·&nbsp; [GitHub ↗](https://github.com/keyvanarasteh) &nbsp;·&nbsp; [LinkedIn ↗](https://www.linkedin.com/in/keyvanarasteh/)) |
 | **Eğitim Platformu** | [**qrofessor.com ↗**](https://qrofessor.com) *(Qrofessor Akademik Hub)* |
@@ -230,4 +229,4 @@ Hafta 3 uzaktan interaktif geliştirme adımları ve görev kılavuzları [`docs
 
 ## 📄 Lisans
 
-Bu proje, İstinye Üniversitesi eğitim faaliyetleri kapsamında [MIT Lisansı](LICENSE) ile lisanslanmıştır.
+Bu proje [Apache License 2.0](LICENSE) ile lisanslanmıştır.
