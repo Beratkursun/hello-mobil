@@ -52,7 +52,7 @@ Tebrikler! 1. Aşama geliştirmeleriniz eksiksiz şekilde tamamlanmıştır. Eğ
 | Kontrol matrisi 9/9 | 4 | 9 maddenin 9'u işaretli ve kanıtlı |
 | Build kanıtı | 2 | `bun run build` çıktısı ekran görüntüsü |
 | Git tag | 2 | `v0.1.0-batch-01` tag'i master üzerinde |
-| Blackboard teslimi | 2 | Batch 01 linki ve PR listesi teslim edildi |
+| Blackboard teslimi | 2 | Tüm görevler bitince final `.zip` Blackboard'a yüklendi |
 
 ## 📚 İlgili Kaynaklar
 
