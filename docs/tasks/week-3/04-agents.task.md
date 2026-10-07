@@ -95,3 +95,20 @@ Bu belge, bu depoda çalışan tüm yapay zeka ajanları (Antigravity, Claude, C
 - [ ] Kök dizinde `GEMINI.md` oluşturuldu ve `AGENTS.md`'ye link verildi.
 - [ ] "Dokümanları tekrarlamama, tek kaynaktan link verme" kuralı benimsendi.
 - [ ] Feature branch ve PR kuralı `AGENTS.md`'ye eklendi.
+
+## 🎯 Puan Rubriği (toplam 10 puan)
+
+| Kriter | Puan | Tam puan koşulu |
+|---|---|---|
+| AGENTS.md içeriği | 3 | Teknoloji, komutlar, git kuralları, kod kuralları yazılı |
+| CLAUDE.md ve GEMINI.md | 2 | İkisi de yalnızca `AGENTS.md`'ye link verir (tekrar yok) |
+| Doküman linkleri doğru | 3 | AGENTS.md'deki her link var olan bir dosyaya gider |
+| PR kuralı | 2 | Branch + PR zorunluluğu AGENTS.md'de açıkça yazılı |
+
+## Ortak Kurallar (tüm görevler)
+
+- **Katılımcı davetı yok:** Eğitmen (`keyvanarasteh`) repoya contributor/collaborator olarak davet edilmez. Teslim yalnızca Blackboard üzerinden yapılır.
+- **PR sayısı:** Her görev için en az 1 PR açılır (`feature/*` veya `fix/*` dalı). Görev 01.2'de tanımlanan akış zorunludur; doğrudan `master`'a commit yoktur.
+- **Doğrulama kanıtı:** `bun run build` çıktısı (0 hata) ve `bun run tauri dev` ile uygulamanın açıldığının ekran görüntüsü teslime eklenir.
+- **Dil desteği:** Uygulama metinleri TR, EN, AR, FA dillerinde bulunur (RTL: AR ve FA için `dir="rtl"`). Görev içeriği bu dillerden birinde değil ise ilgili görev için İngilizce karşılığı eklenir.
+- **Dokümantasyon:** Her kural tek bir `docs/*.md` dosyasında yaşar; `README.md` ve `AGENTS.md` yalnızca link verir (bkz. Görev 04).

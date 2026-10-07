@@ -68,16 +68,68 @@ Aşağıdaki şablonu kopyalayarak kendi deponuzun ana dizinindeki `README.md` d
 
 ---
 
-## 🎓 Akademik Bilgiler
+## 🎓 Akademik Bilgiler & Ders Künyesi
 
-| Bilgi | Detay |
-|---|---|
-| **Üniversite** | [İstinye Üniversitesi](https://www.istinye.edu.tr) |
-| **Bölüm / Program** | Meslek Yüksekokulu — Bilişim Güvenliği Teknolojisi |
-| **Ders** | MYO063 — Mobil Programlama (App Development) |
-| **Öğretim Görevlisi** | Öğr. Gör. Keyvan Arasteh Abbasabad ([Web](https://www.istinye.edu.tr) · [GitHub](https://github.com/keyvanarasteh) · [LinkedIn](https://www.linkedin.com/in/keyvanarasteh/)) |
-| **Geliştirici (Öğrenci)** | [Adınız Soyadınız] — No: [Öğrenci Numaranız] |
-| **E-posta / İletişim** | [öğrenci-no]@ogrenci.istinye.edu.tr · [GitHub Profiliniz](https://github.com/) |
+<div align="center">
+
+[![İstinye Üniversitesi](https://img.shields.io/badge/İstinye%20Üniversitesi-MYO%20Bilişim%20Güvenliği-002855?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.istinye.edu.tr)
+[![MYO063](https://img.shields.io/badge/MYO063-Mobil%20Programlama-FF6F00?style=for-the-badge&logo=dart&logoColor=white)](#)
+[![Dönem](https://img.shields.io/badge/Dönem-2026--2027%20Güz-007ACC?style=for-the-badge)](#)
+[![Telegram](https://img.shields.io/badge/Telegram-App%20Development%202026-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/+w1EVvAU65CQ3ODA0)
+
+</div>
+
+<br>
+
+| Kategori | Parametre | Değer / Bilgi | Hızlı Erişim |
+|:---|:---|:---|:---:|
+| 🏛️ **Kurum** | Üniversite | **İstinye Üniversitesi** | [istinye.edu.tr ↗](https://www.istinye.edu.tr) |
+| | Birim / Program | Meslek Yüksekokulu — Bilişim Güvenliği Teknolojisi | — |
+| 📚 **Ders** | Ders Kodu & Adı | `MYO063` · **Mobil Programlama** *(App Development)* | [Müfredat](docs/klasor-mimarisi.md) |
+| | Akademik Dönem | `2026-2027 Güz` | — |
+| | Ders Saati | Her Çarşamba `15:30 – 17:10` *(Haftalık 2 Saat)* | — |
+| | Derslik & Lab | **T-1B03** *(PC Laboratuvarı · Topkapı Kampüsü)* | Kampüs Planı |
+| 🌐 **Portallar** | Blackboard LMS | Kurs Kodu: `2026–2027–1–11283–1` | [Blackboard ↗](https://istinye.blackboard.com) |
+| | Topluluk | **App Development - 2026** | [Telegram Kanalı ↗](https://t.me/+w1EVvAU65CQ3ODA0) |
+| | Kaynak Depo | `keyvanarasteh/hello-mobil` | [GitHub Repo ↗](https://github.com/keyvanarasteh/hello-mobil) |
+
+<br>
+
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+
+<h3 align="left">👨‍🏫 Öğretim Görevlisi</h3>
+
+<p>
+  <b>Öğr. Gör. Keyvan Arasteh Abbasabad</b><br>
+  <i>Meslek Yüksekokulu — Bilişim Güvenliği Teknolojisi</i>
+</p>
+
+<p>
+  <a href="https://www.istinye.edu.tr" target="_blank"><img src="https://img.shields.io/badge/İstinye-Akademik_Profil-002855?style=flat-square&logo=google-chrome&logoColor=white" height="22" alt="İstinye Profil"></a>
+  <a href="https://github.com/keyvanarasteh" target="_blank"><img src="https://img.shields.io/badge/GitHub-keyvanarasteh-181717?style=flat-square&logo=github&logoColor=white" height="22" alt="GitHub"></a>
+  <a href="https://www.linkedin.com/in/keyvanarasteh/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Keyvan_Arasteh-0A66C2?style=flat-square&logo=linkedin&logoColor=white" height="22" alt="LinkedIn"></a>
+</p>
+
+</td>
+<td width="50%" valign="top">
+
+<h3 align="left">👨‍💻 Geliştirici (Öğrenci) Künyesi</h3>
+
+<p><i>Repoyu fork'ladıktan sonra kendi bilgilerinizi doldurunuz:</i></p>
+
+<ul>
+  <li><b>Adı Soyadı:</b> <code>[Adınız Soyadınız]</code></li>
+  <li><b>Öğrenci No:</b> <code>[Öğrenci Numaranız]</code></li>
+  <li><b>Şube:</b> <code>Şube 1</code></li>
+  <li><b>GitHub:</b> <code>[@kullanici-adiniz]</code></li>
+  <li><b>Proje Fikri:</b> <a href="docs/proje-fikri.md">docs/proje-fikri.md</a></li>
+</ul>
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -151,3 +203,22 @@ Bu proje [MIT Lisansı](LICENSE) kapsamında geliştirilmiştir.
 - [ ] İstinye Üniversitesi ve eğitmen bağlantıları eksiksiz bırakıldı.
 - [ ] Öğrenci adı, numarası ve iletişim bilgileri dolduruldu.
 - [ ] Rozetler (Badges) ve kurulum komutları kontrol edildi.
+
+## 🎯 Puan Rubriği (toplam 10 puan)
+
+| Kriter | Puan | Tam puan koşulu |
+|---|---|---|
+| Kurumsal başlık ve logo | 2 | İSU logosu, proje adı, slogan |
+| Badge'ler | 2 | En az 5 badge, hepsi çalışan link |
+| İçindekiler (TOC) | 1 | Tüm başlıklar için çalışan anchor linki |
+| Kurulum adımları | 2 | klon → `bun install` → `bun run dev` / `bun run tauri dev` / `bun run build`; komutlar gerçekten çalışır |
+| Lisans ve akademik bilgiler | 2 | Lisans bağlantısı, öğrenci adı-numarası, eğitmen bilgisi |
+| Format kuralları | 1 | Başlık seviyeleri tutarlı; klasör ağacı README'ye kopyalanmaz, `docs/klasor-mimarisi.md`'ye link verilir |
+
+## Ortak Kurallar (tüm görevler)
+
+- **Katılımcı davetı yok:** Eğitmen (`keyvanarasteh`) repoya contributor/collaborator olarak davet edilmez. Teslim yalnızca Blackboard üzerinden yapılır.
+- **PR sayısı:** Her görev için en az 1 PR açılır (`feature/*` veya `fix/*` dalı). Görev 01.2'de tanımlanan akış zorunludur; doğrudan `master`'a commit yoktur.
+- **Doğrulama kanıtı:** `bun run build` çıktısı (0 hata) ve `bun run tauri dev` ile uygulamanın açıldığının ekran görüntüsü teslime eklenir.
+- **Dil desteği:** Uygulama metinleri TR, EN, AR, FA dillerinde bulunur (RTL: AR ve FA için `dir="rtl"`). Görev içeriği bu dillerden birinde değil ise ilgili görev için İngilizce karşılığı eklenir.
+- **Dokümantasyon:** Her kural tek bir `docs/*.md` dosyasında yaşar; `README.md` ve `AGENTS.md` yalnızca link verir (bkz. Görev 04).

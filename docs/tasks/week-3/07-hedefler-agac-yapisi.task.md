@@ -80,3 +80,28 @@ Tauri v2 sayesinde tek kod tabanından aşağıdaki tüm platformları hedefliyo
 - [ ] `docs/mimari-agac.md` taslağı kendi fikrinize göre dolduruldu.
 - [ ] Dizin mimarisinde ana klasörlerin (`layouts`, `pages`, `components`, `lib`, `types`, `styles`, `src-tauri`) işlevi anlaşıldı.
 - [ ] Sayfa ağacı ve hedef platformlar dokümana işlendi.
+
+## 🎯 Puan Rubriği (toplam 10 puan)
+
+| Kriter | Puan | Tam puan koşulu |
+|---|---|---|
+| Klasör yapısı | 3 | Yalnızca ana klasörler ve kök dosyalar listelenir; dosya tek tek yazılmaz |
+| Sayfa ve özellik ağacı | 2 | `docs/mimari-agac.md` ile birebir uyumlu; her sayfa bir rota |
+| Platform matrisi | 2 | 5 platform ve hedef çıktı (dmg/msi/deb/ipa/apk) dolu |
+| Responsive ve adaptive | 3 | Telefon, tablet, masaüstü, büyük ekran için breakpoint + düzen ve gezinme davranışı; `max-width` ve grid tanımlı |
+
+## Ortak Kurallar (tüm görevler)
+
+- **Katılımcı davetı yok:** Eğitmen (`keyvanarasteh`) repoya contributor/collaborator olarak davet edilmez. Teslim yalnızca Blackboard üzerinden yapılır.
+- **PR sayısı:** Her görev için en az 1 PR açılır (`feature/*` veya `fix/*` dalı). Görev 01.2'de tanımlanan akış zorunludur; doğrudan `master`'a commit yoktur.
+- **Doğrulama kanıtı:** `bun run build` çıktısı (0 hata) ve `bun run tauri dev` ile uygulamanın açıldığının ekran görüntüsü teslime eklenir.
+- **Dil desteği:** Uygulama metinleri TR, EN, AR, FA dillerinde bulunur (RTL: AR ve FA için `dir="rtl"`). Görev içeriği bu dillerden birinde değil ise ilgili görev için İngilizce karşılığı eklenir.
+- **Dokümantasyon:** Her kural tek bir `docs/*.md` dosyasında yaşar; `README.md` ve `AGENTS.md` yalnızca link verir (bkz. Görev 04).
+
+## 📚 Referanslar
+
+Bu görevde aşağıdaki resmi kaynaklardan yararlanın:
+
+- Apple düzen (layout): https://developer.apple.com/design/human-interface-guidelines/layout
+- MDN responsive tasarım (web): https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design
+- Tasarım temelleri (Figma): https://www.figma.com/resource-library/design-basics/

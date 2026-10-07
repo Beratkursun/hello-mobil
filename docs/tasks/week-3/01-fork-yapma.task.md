@@ -1,6 +1,6 @@
 # Görev 01 — Projeyi Fork'lama ve İşbirliği Ortamı Kurma
 
-Bu görevde kaynak projeyi kendi GitHub hesabınıza kopyalayacak, takım çalışması için eğitmeni collaborator olarak ekleyecek ve Blackboard üzerinden teslimi gerçekleştireceksiniz.
+Bu görevde kaynak projeyi kendi GitHub hesabınıza kopyalayacak ve Blackboard üzerinden teslimi gerçekleştireceksiniz. Eğitmen repoya davet edilmez.
 
 ---
 
@@ -25,24 +25,7 @@ Bu görevde kaynak projeyi kendi GitHub hesabınıza kopyalayacak, takım çalı
 
 ---
 
-## 3. Eğitmeni Contributor / Collaborator Olarak Ekleme
-
-Projelerinizin değerlendirilmesi, kod incelemelerinin (code review) yapılması ve yönlendirme sağlanabilmesi için eğitmeni projenize ortak olarak eklemeniz gerekir.
-
-1. Fork ettiğiniz kendi deponuzun ana sayfasına gidin.
-2. Üst sekmedeki **Settings** (Ayarlar) menüsüne tıklayın.
-3. Sol menüden **Collaborators** seçeneğine tıklayın (GitHub şifrenizi doğrulamanızı isteyebilir).
-4. **Add people** (Kişi Ekle) yeşil butonuna tıklayın.
-5. Arama kutusuna eğitmenin GitHub kullanıcı adını yazın:
-   👉 **`keyvanarasteh`**
-6. Çıkan kullanıcıyı seçip **Add keyvanarasteh to this repository** butonuna basın.
-7. Eğitmene bir davet gidecektir; davet gönderildiğinde bu adım tamamlanmış olur.
-
-> 💡 **Takım Çalışması Notu:** Gerçek yazılım takımlarında izinler (Collaborator rolleri) ve kod incelemeleri bu şekilde organize edilir. Kodunuzu başkalarıyla paylaşabilmek ve geri bildirim alabilmek yazılım geliştirmenin temel kuralıdır.
-
----
-
-## 4. Blackboard Üzerinden Teslim
+## 3. Blackboard Üzerinden Teslim
 
 Fork ve fikir teslimi **bugünkü ders saatinden önce (15:30)** tamamlanmalıdır.
 
@@ -58,5 +41,20 @@ Fork ve fikir teslimi **bugünkü ders saatinden önce (15:30)** tamamlanmalıd�
 ## ✅ Kontrol Listesi
 
 - [ ] `hello-mobil` deposu kendi GitHub hesabıma fork'landı.
-- [ ] Repo ayarlarından `keyvanarasteh` kullanıcısı Collaborator olarak davet edildi.
 - [ ] GitHub profil linki ve yeni repo linki Blackboard üzerinden iletildi.
+
+## 🎯 Puan Rubriği (toplam 10 puan)
+
+| Kriter | Puan | Tam puan koşulu |
+|---|---|---|
+| Fork ve doğru repo adı | 4 | Kendi hesabınızda `hello-mobil` fork'u var; origin ana repoya bağlı |
+| Blackboard teslimi | 3 | GitHub kullanıcı adı + fork linki Blackboard'a süre içinde gönderildi |
+| Tek başına repo sahipliği | 3 | Repo'da eğitmen davet/collaborator kaydı yok (davet yapılmaz) |
+
+## Ortak Kurallar (tüm görevler)
+
+- **Katılımcı davetı yok:** Eğitmen (`keyvanarasteh`) repoya contributor/collaborator olarak davet edilmez. Teslim yalnızca Blackboard üzerinden yapılır.
+- **PR sayısı:** Her görev için en az 1 PR açılır (`feature/*` veya `fix/*` dalı). Görev 01.2'de tanımlanan akış zorunludur; doğrudan `master`'a commit yoktur.
+- **Doğrulama kanıtı:** `bun run build` çıktısı (0 hata) ve `bun run tauri dev` ile uygulamanın açıldığının ekran görüntüsü teslime eklenir.
+- **Dil desteği:** Uygulama metinleri TR, EN, AR, FA dillerinde bulunur (RTL: AR ve FA için `dir="rtl"`). Görev içeriği bu dillerden birinde değil ise ilgili görev için İngilizce karşılığı eklenir.
+- **Dokümantasyon:** Her kural tek bir `docs/*.md` dosyasında yaşar; `README.md` ve `AGENTS.md` yalnızca link verir (bkz. Görev 04).

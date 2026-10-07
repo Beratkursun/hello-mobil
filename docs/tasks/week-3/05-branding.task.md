@@ -110,3 +110,48 @@ Projenizin `docs/branding.md` dosyasını oluşturun ve marka kimliğinizi tanı
 - [ ] `AppHeader.svelte` logo ve başlığı güncellendi.
 - [ ] `tauri.conf.json` pencere başlığı güncellendi.
 - [ ] `bun run build` hatasız tamamlandı.
+
+## 🎯 Puan Rubriği (toplam 15 puan)
+
+| Kriter | Puan | Tam puan koşulu |
+|---|---|---|
+| Renk token'ları | 4 | `docs/branding.md`'de her token için light + dark değer, hex ve kullanım yeri; `app.css`'te `:root` ve `[data-tema="gece"]` ile birebir aynı |
+| Kontrast (WCAG AA) | 2 | Metin/zemin kontrastı ≥ 4.5:1; tablo değerleri ölçülmüş |
+| Platform ikonları | 5 | Aşağıdaki tablodaki tüm platformlar için ikon seti üretildi ve yerleştirildi (iOS, Android, macOS, Windows, Linux) |
+| Logo ve favicon | 2 | `public/favicon.*` ve `AppHeader` logosu güncel |
+| Tauri yapılandırması | 2 | `tauri.conf.json` `productName` ve pencere başlığı güncel |
+
+## Ortak Kurallar (tüm görevler)
+
+- **Katılımcı davetı yok:** Eğitmen (`keyvanarasteh`) repoya contributor/collaborator olarak davet edilmez. Teslim yalnızca Blackboard üzerinden yapılır.
+- **PR sayısı:** Her görev için en az 1 PR açılır (`feature/*` veya `fix/*` dalı). Görev 01.2'de tanımlanan akış zorunludur; doğrudan `master`'a commit yoktur.
+- **Doğrulama kanıtı:** `bun run build` çıktısı (0 hata) ve `bun run tauri dev` ile uygulamanın açıldığının ekran görüntüsü teslime eklenir.
+- **Dil desteği:** Uygulama metinleri TR, EN, AR, FA dillerinde bulunur (RTL: AR ve FA için `dir="rtl"`). Görev içeriği bu dillerden birinde değil ise ilgili görev için İngilizce karşılığı eklenir.
+- **Dokümantasyon:** Her kural tek bir `docs/*.md` dosyasında yaşar; `README.md` ve `AGENTS.md` yalnızca link verir (bkz. Görev 04).
+
+## 4. Platform İkon ve Launcher Tablosu (zorunlu)
+
+| Platform | Dosya / Konum | Boyut ve format | Üretim |
+|---|---|---|---|
+| macOS | `src-tauri/icons/icon.icns` | 1024×1024 kaynak, .icns | `bun run tauri icon` |
+| Windows | `src-tauri/icons/icon.ico` | çok boyutlu .ico (16–256) | `bun run tauri icon` |
+| Linux | `src-tauri/icons/*.png` | 32, 128, 256, 512 px | `bun run tauri icon` |
+| iOS | `src-tauri/icons/ios/` | AppIcon set (20–1024 px) | `bun run tauri icon` (iOS hedefi için Xcode gerekir) |
+| Android | `src-tauri/icons/android/` | mipmap-* (mdpi–xxxhdpi), adaptive icon | `bun run tauri icon` |
+| Web | `public/favicon.png`, `public/apple-touch-icon.png` (180 px) | PNG | elle |
+
+Kaynak: tek bir `app-icon.png` (1024×1024, şeffaf arka plan). Renkler yalnızca `docs/branding.md` token'larından alınır.
+
+## 5. Renk Token'ları (ayrıntılı)
+
+`docs/branding.md` içinde her token için şu sütunlar bulunmalı: **Token adı · Açık (light) hex · Koyu (dark) hex · Kullanım yeri · Kontrast oranı (metin/zemin)**. `app.css` içinde aynı isimler `:root` ve `:root[data-tema="gece"]` altında birebir tanımlanır.
+
+## 📚 Referanslar
+
+Bu görevde aşağıdaki resmi kaynaklardan yararlanın:
+
+- Tasarım temelleri (Figma): https://www.figma.com/resource-library/design-basics/
+- Apple uygulama ikonları: https://developer.apple.com/design/human-interface-guidelines/app-icons
+- Apple Human Interface Guidelines: https://developer.apple.com/design/human-interface-guidelines
+- Apple tipografi: https://developer.apple.com/design/human-interface-guidelines/typography
+- Material 3 tipografi: https://m3.material.io/styles/typography/overview

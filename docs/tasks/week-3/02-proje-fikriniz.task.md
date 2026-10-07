@@ -106,3 +106,27 @@ Seçtiğiniz fikri projenizin `docs/proje-fikri.md` dosyasına şu şablonla kay
 - [ ] 40 fikirden biri seçildi veya özgün fikir belirlendi.
 - [ ] `docs/proje-fikri.md` dosyası oluşturulup dolduruldu.
 - [ ] Belirlenen fikir ders saatinden (15:30) önce Blackboard'a yazıldı.
+
+## 🎯 Puan Rubriği (toplam 10 puan)
+
+| Kriter | Puan | Tam puan koşulu |
+|---|---|---|
+| Konsept seçimi | 2 | 40 fikirden biri veya gerekçeli özgün fikir |
+| 3 ekran tanımı | 3 | Liste, detay/seçim ve kayıt/kod ekranı net ve birbirine bağlı |
+| Hedef kitle | 2 | Kim kullanır, neden kullanır sorusu yanıtlı |
+| Veri modeli ve kod üretimi | 2 | Rust tarafında üretilen kodun formatı tanımlı (örn. `PSK-XXX-XXXXXXX`) |
+| Blackboard'a süre içinde iletildi | 1 | Fikir özeti 15:30 öncesi teslim |
+
+## Ortak Kurallar (tüm görevler)
+
+- **Katılımcı davetı yok:** Eğitmen (`keyvanarasteh`) repoya contributor/collaborator olarak davet edilmez. Teslim yalnızca Blackboard üzerinden yapılır.
+- **PR sayısı:** Her görev için en az 1 PR açılır (`feature/*` veya `fix/*` dalı). Görev 01.2'de tanımlanan akış zorunludur; doğrudan `master`'a commit yoktur.
+- **Doğrulama kanıtı:** `bun run build` çıktısı (0 hata) ve `bun run tauri dev` ile uygulamanın açıldığının ekran görüntüsü teslime eklenir.
+- **Dil desteği:** Uygulama metinleri TR, EN, AR, FA dillerinde bulunur (RTL: AR ve FA için `dir="rtl"`). Görev içeriği bu dillerden birinde değil ise ilgili görev için İngilizce karşılığı eklenir.
+- **Dokümantasyon:** Her kural tek bir `docs/*.md` dosyasında yaşar; `README.md` ve `AGENTS.md` yalnızca link verir (bkz. Görev 04).
+
+## 📚 Referanslar
+
+Bu görevde aşağıdaki resmi kaynaklardan yararlanın:
+
+- Tasarım temelleri (Figma): https://www.figma.com/resource-library/design-basics/

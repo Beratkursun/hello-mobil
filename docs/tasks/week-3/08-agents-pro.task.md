@@ -62,3 +62,20 @@ Bu belge, bu depoda çalışan tüm yapay zeka ajanları (Antigravity, Cursor, C
 - [ ] `AGENTS.md` güncellendi ve tüm `docs/` bağlantıları (özellikle `docs/klasor-mimarisi.md`) doğrulandı.
 - [ ] `CLAUDE.md` ve `GEMINI.md` dosyalarının `AGENTS.md`'ye referans verdiği teyit edildi.
 - [ ] Dokümanların ve kuralların yinelenmeden tek merkezden linklenmesi kuralı ajana benimsetildi.
+
+## 🎯 Puan Rubriği (toplam 10 puan)
+
+| Kriter | Puan | Tam puan koşulu |
+|---|---|---|
+| Doküman indeksi | 3 | Tüm `docs/*.md` dosyaları AGENTS.md tablosunda listelenir ve linkler çalışır |
+| Doğruluk kontrolü | 3 | Her komut gerçekten çalışır (`bun run build` 0 hata); eski/kopya bilgi yok |
+| Tek kaynak kuralı | 2 | Renk, klasör ve sayfa ağacı yalnızca kendi dokümanında; AGENTS.md link verir |
+| Ajan uyumu testi | 2 | Ajana bir renk ve bir sayfa görevi verilip AGENTS.md'ye uyduğu doğrulandı |
+
+## Ortak Kurallar (tüm görevler)
+
+- **Katılımcı davetı yok:** Eğitmen (`keyvanarasteh`) repoya contributor/collaborator olarak davet edilmez. Teslim yalnızca Blackboard üzerinden yapılır.
+- **PR sayısı:** Her görev için en az 1 PR açılır (`feature/*` veya `fix/*` dalı). Görev 01.2'de tanımlanan akış zorunludur; doğrudan `master`'a commit yoktur.
+- **Doğrulama kanıtı:** `bun run build` çıktısı (0 hata) ve `bun run tauri dev` ile uygulamanın açıldığının ekran görüntüsü teslime eklenir.
+- **Dil desteği:** Uygulama metinleri TR, EN, AR, FA dillerinde bulunur (RTL: AR ve FA için `dir="rtl"`). Görev içeriği bu dillerden birinde değil ise ilgili görev için İngilizce karşılığı eklenir.
+- **Dokümantasyon:** Her kural tek bir `docs/*.md` dosyasında yaşar; `README.md` ve `AGENTS.md` yalnızca link verir (bkz. Görev 04).

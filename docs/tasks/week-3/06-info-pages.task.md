@@ -87,3 +87,29 @@ Oluşturduğunuz sayfalara kullanıcıların ulaşabilmesi için:
 - [ ] `src/pages/kosullar.mdx` ve `src/pages/gizlilik.mdx` sayfaları eklendi.
 - [ ] Sayfalar menüden veya profilden erişilebilir hale getirildi.
 - [ ] `bun run build` komutu ile tüm sayfaların başarıyla derlendiği doğrulandı.
+
+## 🎯 Puan Rubriği (toplam 15 puan)
+
+| Kriter | Puan | Tam puan koşulu |
+|---|---|---|
+| Hakkında (MDX) | 3 | Proje amacı, geliştirici bilgisi, en az 1 etkileşimli bileşen |
+| İletişim formu | 3 | Svelte/React formu çalışır; gönderim sonrası bildirim ve temizleme |
+| Kullanım Koşulları ve Gizlilik | 3 | İki sayfa da MDX; localStorage ve KVKK bildirimi içerir |
+| Çok dil (TR/EN/AR/FA) | 3 | Her sayfa 4 dilde; AR/FA sayfalarında `dir="rtl"`; sayfalar tüm dillerde derlenir |
+| Navigasyon | 3 | Sayfalar profil veya AppNav üzerinden erişilebilir |
+
+## Ortak Kurallar (tüm görevler)
+
+- **Katılımcı davetı yok:** Eğitmen (`keyvanarasteh`) repoya contributor/collaborator olarak davet edilmez. Teslim yalnızca Blackboard üzerinden yapılır.
+- **PR sayısı:** Her görev için en az 1 PR açılır (`feature/*` veya `fix/*` dalı). Görev 01.2'de tanımlanan akış zorunludur; doğrudan `master`'a commit yoktur.
+- **Doğrulama kanıtı:** `bun run build` çıktısı (0 hata) ve `bun run tauri dev` ile uygulamanın açıldığının ekran görüntüsü teslime eklenir.
+- **Dil desteği:** Uygulama metinleri TR, EN, AR, FA dillerinde bulunur (RTL: AR ve FA için `dir="rtl"`). Görev içeriği bu dillerden birinde değil ise ilgili görev için İngilizce karşılığı eklenir.
+- **Dokümantasyon:** Her kural tek bir `docs/*.md` dosyasında yaşar; `README.md` ve `AGENTS.md` yalnızca link verir (bkz. Görev 04).
+
+## 📚 Referanslar
+
+Bu görevde aşağıdaki resmi kaynaklardan yararlanın:
+
+- Apple tipografi: https://developer.apple.com/design/human-interface-guidelines/typography
+- Material 3 tipografi: https://m3.material.io/styles/typography/overview
+- Tasarım temelleri (Figma): https://www.figma.com/resource-library/design-basics/

@@ -44,3 +44,20 @@ git push origin v0.1.0-batch-01
 ```
 
 Tebrikler! 1. Aşama geliştirmeleriniz eksiksiz şekilde tamamlanmıştır. Eğitmenin bildireceği 2. Aşama (derinlemesine AI geliştirme görevleri) için hazırsınız.
+
+## 🎯 Puan Rubriği (toplam 10 puan)
+
+| Kriter | Puan | Tam puan koşulu |
+|---|---|---|
+| Kontrol matrisi 9/9 | 4 | 9 maddenin 9'u işaretli ve kanıtlı |
+| Build kanıtı | 2 | `bun run build` çıktısı ekran görüntüsü |
+| Git tag | 2 | `v0.1.0-batch-01` tag'i master üzerinde |
+| Blackboard teslimi | 2 | Batch 01 linki ve PR listesi teslim edildi |
+
+## Ortak Kurallar (tüm görevler)
+
+- **Katılımcı davetı yok:** Eğitmen (`keyvanarasteh`) repoya contributor/collaborator olarak davet edilmez. Teslim yalnızca Blackboard üzerinden yapılır.
+- **PR sayısı:** Her görev için en az 1 PR açılır (`feature/*` veya `fix/*` dalı). Görev 01.2'de tanımlanan akış zorunludur; doğrudan `master`'a commit yoktur.
+- **Doğrulama kanıtı:** `bun run build` çıktısı (0 hata) ve `bun run tauri dev` ile uygulamanın açıldığının ekran görüntüsü teslime eklenir.
+- **Dil desteği:** Uygulama metinleri TR, EN, AR, FA dillerinde bulunur (RTL: AR ve FA için `dir="rtl"`). Görev içeriği bu dillerden birinde değil ise ilgili görev için İngilizce karşılığı eklenir.
+- **Dokümantasyon:** Her kural tek bir `docs/*.md` dosyasında yaşar; `README.md` ve `AGENTS.md` yalnızca link verir (bkz. Görev 04).

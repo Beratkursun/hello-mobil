@@ -74,3 +74,21 @@ Bu kural projenizin `AGENTS.md` dosyasına bağlayıcı bir kural olarak eklenec
 - [ ] Değişiklikler test edilip commit'lendi.
 - [ ] GitHub'da Pull Request açılarak diff incelendi.
 - [ ] PR başarıyla `master` dalına merge edildi.
+
+## 🎯 Puan Rubriği (toplam 10 puan)
+
+| Kriter | Puan | Tam puan koşulu |
+|---|---|---|
+| Feature branch | 2 | `feature/<ad>` dalı açıldı, master'a doğrudan commit yok |
+| Conventional commit | 2 | Commit mesajları `feat:`/`fix:`/`docs:` ile başlar |
+| PR açıklaması | 2 | PR'da ne yapıldığı ve AI'a verilen görev 2-3 cümle ile yazılı |
+| Diff incelemesi ve merge | 2 | Files changed incelendi; PR master'a merge edildi |
+| PR sayısı | 2 | Görev 01.2 kapsamında en az 1 merge edilmiş PR (her özellik ayrı PR) |
+
+## Ortak Kurallar (tüm görevler)
+
+- **Katılımcı davetı yok:** Eğitmen (`keyvanarasteh`) repoya contributor/collaborator olarak davet edilmez. Teslim yalnızca Blackboard üzerinden yapılır.
+- **PR sayısı:** Her görev için en az 1 PR açılır (`feature/*` veya `fix/*` dalı). Görev 01.2'de tanımlanan akış zorunludur; doğrudan `master`'a commit yoktur.
+- **Doğrulama kanıtı:** `bun run build` çıktısı (0 hata) ve `bun run tauri dev` ile uygulamanın açıldığının ekran görüntüsü teslime eklenir.
+- **Dil desteği:** Uygulama metinleri TR, EN, AR, FA dillerinde bulunur (RTL: AR ve FA için `dir="rtl"`). Görev içeriği bu dillerden birinde değil ise ilgili görev için İngilizce karşılığı eklenir.
+- **Dokümantasyon:** Her kural tek bir `docs/*.md` dosyasında yaşar; `README.md` ve `AGENTS.md` yalnızca link verir (bkz. Görev 04).
