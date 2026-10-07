@@ -1,67 +1,77 @@
-# Klasör Mimarisi ve Dizin Yapısı
+# Klasör Mimarisi ve Dizin Rehberi
 
-Bu doküman, projenin dizin hiyerarşisini ve her modülün sorumluluk alanını tanımlar.
+Bu belge, projenin temel dizin yapısını, önemli klasörlerin sorumluluklarını ve bunların ne zaman / nasıl kullanılacağını açıklar.
 
-> 📌 **Dokümantasyon Kuralı (Single Source of Truth):**
-> Klasör yapısı yalnızca bu dokümanda tanımlanır ve güncellenir. `README.md`, `AGENTS.md` ve diğer rehberler bu dokümana bağlantı verir; dizin ağacı farklı yerlerde kopyalanıp çoğaltılmaz.
+> 📌 **Dokümantasyon Kuralı:**
+> Dizin yapısı yalnızca bu belgede tutulur; `README.md` veya `AGENTS.md` içine kopyalanmaz, buraya link verilir.
+> Proje geliştikçe her münferit dosyayı buraya eklemeyin; ana klasörleri ve sorumluluk sınırlarını koruyun.
 
 ---
 
-## 📂 Dizin Ağacı
+## 📂 Temel Dizin Mimarisi
 
 ```
 hello-mobil/
-├── public/                  # Statik varlıklar (İstinye logosu, favicon, svg simgeleri)
-├── src/
-│   ├── components/          # Svelte ve React UI bileşenleri
-│   │   ├── AppHeader.svelte # Logo ve gece/gündüz modu butonu
-│   │   ├── AppNav.svelte    # Rozetli alt gezinme menüsü
-│   │   ├── Kesfet.svelte    # Ana sayfa arama ve listeleme
-│   │   ├── Sepet.svelte     # Sepet yönetimi
-│   │   ├── Biletlerim.svelte# Bilet listesi
-│   │   ├── Profil.svelte    # Profil ve ayarlar
-│   │   └── react/           # React bileşenleri (örn: CanliRozet.tsx)
-│   ├── layouts/
-│   │   └── Layout.astro     # Ana Astro sayfa şablonu & ClientRouter
-│   ├── lib/
-│   │   ├── data.ts          # Etkinlik ve kategori veri modelleri
-│   │   ├── biletler.svelte.ts # Rust invoke("bilet_olustur") ve yerel saklama
-│   │   ├── sepet.svelte.ts  # Sepet durumu ($state, $derived)
-│   │   └── tema.svelte.ts   # Gece/Gündüz tema yöneticisi
-│   ├── pages/               # Astro dosya tabanlı yönlendirme
-│   │   ├── index.astro      # Keşfet ekranı
-│   │   ├── sepet.astro      # Sepet ekranı
-│   │   ├── biletlerim.astro # Biletler ekranı
-│   │   ├── profil.astro     # Profil ekranı
-│   │   ├── etkinlik/
-│   │   │   └── [id].astro   # Dinamik etkinlik detay sayfası (getStaticPaths)
-│   │   └── hakkinda.mdx     # MDX formatında rehber sayfası
-│   └── styles/
-│       └── app.css          # Marka CSS değişkenleri ve global stiller
-├── src-tauri/               # Rust Tauri backend çekirdeği
-│   ├── src/lib.rs           # bilet_olustur tauri komutu ve uygulama girişi
-│   ├── Cargo.toml           # Rust bağımlılıkları
-│   └── tauri.conf.json      # Pencere, güvenlik ve derleme ayarları
-├── docs/                    # Proje dokümantasyonu ve görevler
-│   ├── klasor-mimarisi.md   # Bu belge (dizin yapısı)
-│   └── tasks/week-3/        # Hafta 3 uzaktan çalışma ve görev kılavuzları
-├── astro.config.mjs         # Astro + Svelte + React + MDX yapılandırması
-├── svelte.config.js         # Svelte ön işlemci ayarları
-├── tsconfig.json            # TypeScript ve $lib alias tanımları
-└── package.json             # Proje script'leri ve bağımlılıklar
+├── package.json             # Bağımlılıklar, scriptler ve motor tanımları
+├── astro.config.mjs         # Astro entegrasyonları (Svelte, React, MDX) ve Vite port ayarları
+├── tsconfig.json            # TypeScript yapılandırması ve $lib alias'ı
+├── .gitignore               # Versiyon kontrol dışı bırakılan dosyalar
+│
+├── public/                  # Statik varlıklar (Derlenmeyen logolar, favicon, görseller)
+├── src-tauri/               # Rust Tauri çekirdeği (Pencere, yetkiler, native komutlar)
+│   ├── tauri.conf.json      # Masaüstü/mobil pencere ayarları ve frontendDist hedefi
+│   ├── Cargo.toml           # Rust kütüphaneleri ve bağımlılıkları
+│   └── src/lib.rs           # Rust backend komutları ve uygulama giriş noktası
+│
+├── src/                     # Ön yüz kaynak kodları (Frontend)
+│   ├── layouts/             # Sayfa iskeletleri (Layout.astro, ortak header/nav, ClientRouter)
+│   ├── pages/               # Dosya tabanlı rota sistemi (URL rotaları: .astro, .mdx)
+│   ├── components/          # Yeniden kullanılabilir UI bileşenleri (.svelte, .tsx)
+│   ├── lib/                 # İş mantığı, mock veri, Svelte 5 state store'ları ($state)
+│   ├── types/               # TypeScript tip tanımları ve arayüzler (.ts)
+│   └── styles/              # Global tema değişkenleri ve CSS stilleri (app.css)
+│
+└── docs/                    # Proje dokümantasyonu, görevler ve mimari rehberler
 ```
 
 ---
 
-## 🔍 Modül Sorumlulukları
+## 🛠️ Klasörlerin Kullanımı ve Sorumlulukları
 
-| Dizin | Sorumluluk | Açıklama |
-|---|---|---|
-| `public/` | Statik Dosyalar | Derleme sürecine girmeden doğrudan kökten servis edilen favicon, svg ve logolar. |
-| `src/components/` | Yeniden Kullanılabilir UI | Svelte 5 ve React ile yazılmış arayüz bileşenleri. |
-| `src/layouts/` | Sayfa Şablonları | Ortak üst bar, alt bar ve sayfa geçiş animasyonlarını (`ClientRouter`) barındıran Astro layout'ları. |
-| `src/lib/` | State & Veri | `$state` ve `$derived` içeren Svelte 5 store'ları, Rust invoke çağrıları ve veri tipleri. |
-| `src/pages/` | Rotalar (Routing) | Dosya tabanlı URL yönlendirmeleri (`.astro`, `.mdx`). |
-| `src/styles/` | Tasarım Sistemi | CSS değişkenleri (`--renk-ana`, `--zemin` vb.) ve tema sınıfları. |
-| `src-tauri/` | Yerel Çekirdek | Rust kodu, işletim sistemi izinleri, masaüstü/mobil pencere ayarları. |
-| `docs/` | Dokümantasyon | Mimari, markalama, görevler ve ajan kılavuzları. |
+### 1. `package.json` & `astro.config.mjs` (Kök Konfigürasyon)
+- **`package.json`:** Projenin bağımlılıklarını (`dependencies`) ve `bun run dev`, `bun run build` gibi komutlarını barındırır.
+- **`astro.config.mjs`:** Svelte, React, MDX gibi entegrasyonların ve Vite ayarlarının (Tauri portu `1420`, `$lib` aliası) yapıldığı merkezdir.
+
+### 2. `public/` (Statik Varlıklar)
+- **Ne konur?** Doğrudan derleme sürecine girmeden tarayıcıya sunulacak dosyalar (logolar, `favicon.png`, `robots.txt`, resimler).
+- **Nasıl kullanılır?** Kod içinde `/logo.svg` veya `/favicon.png` şeklinde kök dizinden çağrılır.
+
+### 3. `src-tauri/` (Native Çekirdek)
+- **Ne konur?** Rust backend kodları (`src/lib.rs`), Cargo paketleri (`Cargo.toml`) ve uygulama pencere/izin ayarları (`tauri.conf.json`).
+- **Ne zaman kullanılır?** İşletim sistemiyle konuşacak native kodlar (bilet oluşturma, dosya sistemi, bildirimler) yazılırken.
+
+### 4. `src/layouts/` (Sayfa İskeletleri)
+- **Ne konur?** Sayfaların ortak şablonları (`Layout.astro`).
+- **Ne zaman kullanılır?** Üst bar, alt gezinme menüsü, tema kontrolü (`document.documentElement.dataset.tema`) ve yumuşak sayfa geçişleri (`<ClientRouter />`) burada tanımlanır. Sayfalar bu layout'u sarmalar.
+
+### 5. `src/pages/` (Dosya Tabanlı Rotalar)
+- **Ne konur?** Kullanıcının tarayıcıda veya mobil ekranda gezeceği sayfalar (`index.astro`, `biletlerim.astro`, `etkinlik/[id].astro`, `hakkinda.mdx`).
+- **Kural:** Dosya adı doğrudan URL yolu olur. İçerik ağırlıklı sayfalar için `.mdx`, dinamik veya bileşen içeren sayfalar için `.astro` kullanılır.
+
+### 6. `src/components/` (Yeniden Kullanılabilir UI Bileşenleri)
+- **Ne konur?** Butonlar, kartlar, formlar, üst/alt barlar (`.svelte` veya `.tsx`).
+- **Kural:** Birden fazla sayfada tekrar eden veya bağımsız bir işlevi olan görsel parçalar burada toplanır. Svelte veya React ile yazılabilir.
+
+### 7. `src/lib/` (Durum ve İş Mantığı)
+- **Ne konur?** Svelte 5 `$state` store'ları (sepet, biletler, tema), mock veriler (`data.ts`) ve Rust invoke çağrıları.
+- **Nasıl import edilir?** `$lib/data` veya `$lib/sepet.svelte` şeklinde doğrudan alias ile çağrılır.
+
+### 8. `src/types/` (Tip Tanımları)
+- **Ne konur?** Projede kullanılan TypeScript arayüzleri (`interface`) ve tipleri (`type`). Veri modelleri karmaşıklaştıkça tipler bu klasörde toplanır.
+
+### 9. `src/styles/` (Tasarım ve Stiller)
+- **Ne konur?** `app.css` ve tema tanımları.
+- **Kural:** Renkler CSS değişkeni (`--renk-ana`, `--zemin`, `--kart`) olarak burada tanımlanır; ad-hoc renk yazılmaz.
+
+### 10. `docs/` (Dokümantasyon)
+- **Ne konur?** Mimari kararlar, marka renkleri, görev kılavuzları ve proje planları.
