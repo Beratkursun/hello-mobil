@@ -45,6 +45,13 @@ git push origin v0.1.0-batch-01
 
 Tebrikler! 1. Aşama geliştirmeleriniz eksiksiz şekilde tamamlanmıştır. Eğitmenin bildireceği 2. Aşama (derinlemesine AI geliştirme görevleri) için hazırsınız.
 
+---
+
+## 4. Blackboard Teslim Formatı
+
+- **PR Linki Gönderilmez:** Blackboard'a PR linki eklemenize gerek yoktur. Eğitmen (`keyvanarasteh`) deponuzda collaborator olduğu için tüm PR'ları, açıklamaları ve diff'leri doğrudan GitHub üzerinden görecektir.
+- **Tek Final ZIP:** Tüm görevler tamamlandığında projenizin final halini GitHub üzerinden ZIP olarak indirin (`Code > Download ZIP`) ve Blackboard'a tek bir `.zip` dosyası olarak yükleyin.
+
 ## 🎯 Puan Rubriği (toplam 10 puan)
 
 | Kriter | Puan | Tam puan koşulu |

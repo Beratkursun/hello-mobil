@@ -24,7 +24,7 @@ Bir yazılım deposunun vitrini `README.md` dosyasıdır. Projeyi inceleyen eği
 4. Kurulum komutlarını kendi repo adresinizle ve gerçekten çalışır halde yazın.
 5. Bağlantıların hepsinin çalıştığını kontrol edin.
 
-Yaptığınız değişikliği tek bir PR olarak açın (`docs/readme-patch` gibi bir dal) ve Blackboard'a PR linkini ekleyin.
+Yaptığınız değişikliği tek bir PR olarak açın (`docs/readme-patch` gibi bir dal) ve ana dala merge edin. (PR linkini Blackboard'a eklemenize gerek yoktur; eğitmen repoda collaborator olduğu için PR'ları doğrudan GitHub üzerinden inceleyecektir. Blackboard'a yalnızca tüm görevler tamamlandığında final `.zip` yüklenecektir.)
 
 ---
 
