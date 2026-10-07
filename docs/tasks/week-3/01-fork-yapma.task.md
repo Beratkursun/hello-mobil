@@ -41,7 +41,7 @@ Projelerinizin değerlendirilmesi, kod incelemelerinin (code review) yapılması
 
 ## 4. Blackboard Üzerinden Teslim
 
-Fork ve fikir teslimi **bugünkü ders saatinden önce (15:30)** tamamlanmalıdır.
+Fork ve fikir teslimi **07.10.2026 23:59'a kadar** tamamlanmalıdır.
 
 1. **İstinye Üniversitesi Blackboard** sistemine giriş yapın.
 2. **MYO063 — Mobil Programlama** dersinizi açın.

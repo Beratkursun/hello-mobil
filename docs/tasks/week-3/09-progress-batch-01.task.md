@@ -1,6 +1,6 @@
 # Görev 09 — 1. Aşama İlerleme ve Teslim Denetimi (Progress Batch 01)
 
-Bu görev, Hafta 3 uzaktan çalışma sürecinde (24 saatlik süre içinde) tamamlanan tüm adımların topluca denetlendiği ve projenin ilk resmi kilometre taşına (`milestone`) ulaştırıldığı kontrol aşamasıdır.
+Bu görev, Hafta 3 uzaktan çalışma sürecinde (09.10.2026 23:59 son teslimine kadar) tamamlanan tüm adımların topluca denetlendiği ve projenin ilk resmi kilometre taşına (`milestone`) ulaştırıldığı kontrol aşamasıdır.
 
 ---
 

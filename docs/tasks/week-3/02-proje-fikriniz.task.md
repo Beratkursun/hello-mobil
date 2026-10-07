@@ -105,7 +105,7 @@ Seçtiğiniz fikri projenizin `docs/proje-fikri.md` dosyasına şu şablonla kay
 
 - [ ] 40 fikirden biri seçildi veya özgün fikir belirlendi.
 - [ ] `docs/proje-fikri.md` dosyası oluşturulup dolduruldu.
-- [ ] Belirlenen fikir ders saatinden (15:30) önce Blackboard'a yazıldı.
+- [ ] Belirlenen fikir 07.10.2026 23:59'a kadar Blackboard'a yazıldı.
 
 ## 🎯 Puan Rubriği (toplam 10 puan)
 
@@ -115,7 +115,7 @@ Seçtiğiniz fikri projenizin `docs/proje-fikri.md` dosyasına şu şablonla kay
 | 3 ekran tanımı | 3 | Liste, detay/seçim ve kayıt/kod ekranı net ve birbirine bağlı |
 | Hedef kitle | 2 | Kim kullanır, neden kullanır sorusu yanıtlı |
 | Veri modeli ve kod üretimi | 2 | Rust tarafında üretilen kodun formatı tanımlı (örn. `PSK-XXX-XXXXXXX`) |
-| Blackboard'a süre içinde iletildi | 1 | Fikir özeti 15:30 öncesi teslim |
+| Blackboard'a süre içinde iletildi | 1 | Fikir özeti 07.10.2026 23:59 öncesi teslim |
 
 ## Ortak Kurallar (tüm görevler)
 
