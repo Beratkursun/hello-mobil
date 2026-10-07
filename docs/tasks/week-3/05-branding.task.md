@@ -121,14 +121,6 @@ Projenizin `docs/branding.md` dosyasını oluşturun ve marka kimliğinizi tanı
 | Logo ve favicon | 2 | `public/favicon.*` ve `AppHeader` logosu güncel |
 | Tauri yapılandırması | 2 | `tauri.conf.json` `productName` ve pencere başlığı güncel |
 
-## Ortak Kurallar (tüm görevler)
-
-- **Eğitmen davetı (zorunlu):** Öğrenci, repoya eğitmeni (`keyvanarasteh`) **collaborator** olarak davet eder (Settings > Collaborators > Add people). Teslim Blackboard üzerinden yapılır.
-- **PR sayısı:** Her görev için en az 1 PR açılır (`feature/*` veya `fix/*` dalı). Görev 01.2'de tanımlanan akış zorunludur; doğrudan `master`'a commit yoktur.
-- **Doğrulama kanıtı:** `bun run build` çıktısı (0 hata) ve `bun run tauri dev` ile uygulamanın açıldığının ekran görüntüsü teslime eklenir.
-- **Dil desteği:** Uygulama metinleri TR, EN, AR, FA dillerinde bulunur (RTL: AR ve FA için `dir="rtl"`). Görev içeriği bu dillerden birinde değil ise ilgili görev için İngilizce karşılığı eklenir.
-- **Dokümantasyon:** Her kural tek bir `docs/*.md` dosyasında yaşar; `README.md` ve `AGENTS.md` yalnızca link verir (bkz. Görev 04).
-
 ## 4. Platform İkon ve Launcher Tablosu (zorunlu)
 
 | Platform | Dosya / Konum | Boyut ve format | Üretim |
@@ -146,11 +138,9 @@ Kaynak: tek bir `app-icon.png` (1024×1024, şeffaf arka plan). Renkler yalnızc
 
 `docs/branding.md` içinde her token için şu sütunlar bulunmalı: **Token adı · Açık (light) hex · Koyu (dark) hex · Kullanım yeri · Kontrast oranı (metin/zemin)**. `app.css` içinde aynı isimler `:root` ve `:root[data-tema="gece"]` altında birebir tanımlanır.
 
-## 📚 Kaynaklar
+## 📚 İlgili Kaynaklar
 
-- **Kaynak repo:** [github.com/keyvanarasteh/hello-mobil](https://github.com/keyvanarasteh/hello-mobil)
 - **Tasarım temelleri (Figma):** [figma.com/resource-library/design-basics](https://www.figma.com/resource-library/design-basics/)
 - **Apple HIG:** [developer.apple.com/design/human-interface-guidelines](https://developer.apple.com/design/human-interface-guidelines)
 - **Apple uygulama ikonları:** [app-icons](https://developer.apple.com/design/human-interface-guidelines/app-icons) · **Düzen:** [layout](https://developer.apple.com/design/human-interface-guidelines/layout)
-- **Responsive (web):** [MDN responsive design](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design)
 - **Tipografi:** [Apple typography](https://developer.apple.com/design/human-interface-guidelines/typography) · [Material 3 typography](https://m3.material.io/styles/typography/overview)
