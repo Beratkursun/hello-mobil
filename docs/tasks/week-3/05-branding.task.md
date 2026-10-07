@@ -123,7 +123,7 @@ Projenizin `docs/branding.md` dosyasını oluşturun ve marka kimliğinizi tanı
 
 ## Ortak Kurallar (tüm görevler)
 
-- **Katılımcı davetı yok:** Eğitmen (`keyvanarasteh`) repoya contributor/collaborator olarak davet edilmez. Teslim yalnızca Blackboard üzerinden yapılır.
+- **Eğitmen davetı (zorunlu):** Öğrenci, repoya eğitmeni (`keyvanarasteh`) **collaborator** olarak davet eder (Settings > Collaborators > Add people). Teslim Blackboard üzerinden yapılır.
 - **PR sayısı:** Her görev için en az 1 PR açılır (`feature/*` veya `fix/*` dalı). Görev 01.2'de tanımlanan akış zorunludur; doğrudan `master`'a commit yoktur.
 - **Doğrulama kanıtı:** `bun run build` çıktısı (0 hata) ve `bun run tauri dev` ile uygulamanın açıldığının ekran görüntüsü teslime eklenir.
 - **Dil desteği:** Uygulama metinleri TR, EN, AR, FA dillerinde bulunur (RTL: AR ve FA için `dir="rtl"`). Görev içeriği bu dillerden birinde değil ise ilgili görev için İngilizce karşılığı eklenir.
