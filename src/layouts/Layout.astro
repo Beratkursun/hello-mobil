@@ -1,0 +1,44 @@
+---
+import { ClientRouter } from 'astro:transitions';
+import AppHeader from '../components/AppHeader.svelte';
+import AppNav from '../components/AppNav.svelte';
+import '../styles/app.css';
+
+interface Props {
+  title?: string;
+}
+
+const { title = "PassoKlon" } = Astro.props;
+const currentPath = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{title}</title>
+    <script is:inline>
+      // Adım 15: Açılışta renk yanıp sönmesini engellemek için temayı anında uygula
+      document.documentElement.dataset.tema =
+        localStorage.getItem("tema") ??
+        (matchMedia("(prefers-color-scheme: dark)").matches ? "gece" : "gunduz");
+    </script>
+    <ClientRouter />
+  </head>
+  <body>
+    <AppHeader client:load />
+    <main>
+      <slot />
+    </main>
+    <AppNav client:load currentPath={currentPath} />
+  </body>
+</html>
+
+<style>
+  main {
+    padding-bottom: calc(80px + env(safe-area-inset-bottom));
+    min-height: 100vh;
+  }
+</style>

@@ -15,6 +15,7 @@ const ANAHTAR = "biletlerim";
 
 function yukle(): Bilet[] {
   try {
+    if (typeof localStorage === "undefined") return [];
     return JSON.parse(localStorage.getItem(ANAHTAR) ?? "[]");
   } catch {
     return [];
@@ -23,7 +24,7 @@ function yukle(): Bilet[] {
 
 // Tauri içinde çalışıyorsak Rust komutunu çağır, tarayıcıda ise JS ile üret
 async function biletKoduAl(etkinlikId: number): Promise<string> {
-  if (isTauri()) {
+  if (typeof window !== "undefined" && isTauri()) {
     // Rust tarafındaki etkinlik_id parametresi JS'te camelCase yazılır: etkinlikId
     return invoke<string>("bilet_olustur", { etkinlikId });
   }
@@ -45,7 +46,9 @@ class Biletlerim {
         adet: k.adet,
       });
     }
-    localStorage.setItem(ANAHTAR, JSON.stringify(this.liste));
+    if (typeof localStorage !== "undefined") {
+      localStorage.setItem(ANAHTAR, JSON.stringify(this.liste));
+    }
   }
 }
 

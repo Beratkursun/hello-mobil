@@ -2,7 +2,11 @@
   // Adım 14: Profil — basit (sahte) giriş formu, kullanıcı localStorage'da tutulur
   import { biletlerim } from "$lib/biletler.svelte";
 
-  let kullanici = $state(localStorage.getItem("kullanici") ?? "");
+  let kullanici = $state(
+    typeof localStorage !== "undefined"
+      ? (localStorage.getItem("kullanici") ?? "")
+      : ""
+  );
   let ad = $state("");
   let eposta = $state("");
 
@@ -104,5 +108,6 @@
     background: var(--kart);
     color: var(--yazi);
     border: 1px solid var(--kenar);
+    margin-top: 8px;
   }
 </style>

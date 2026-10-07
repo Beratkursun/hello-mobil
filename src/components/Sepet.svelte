@@ -1,7 +1,6 @@
 <script lang="ts">
   // Adım 10: Sepet sayfası — kalemleri listele, toplamı göster
   // Adım 12: "Ödemeyi tamamla" Rust'taki bilet_olustur komutunu çağırır
-  import { goto } from "$app/navigation";
   import { tarihYaz, tl } from "$lib/data";
   import { sepet } from "$lib/sepet.svelte";
   import { biletlerim } from "$lib/biletler.svelte";
@@ -13,7 +12,7 @@
     await biletlerim.satinAl(sepet.kalemler);
     sepet.temizle();
     isleniyor = false;
-    goto("/biletlerim");
+    window.location.href = "/biletlerim";
   }
 </script>
 
@@ -80,6 +79,7 @@
     border: 0;
     background: none;
     font-size: 18px;
+    cursor: pointer;
   }
 
   .ozet {

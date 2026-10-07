@@ -52,15 +52,18 @@
 
   .cipler button {
     flex-shrink: 0;
-    padding: 8px 16px;
+    padding: 8px 14px;
     border: 1px solid var(--kenar);
     border-radius: 999px;
     background: var(--kart);
+    font-size: 13px;
+    color: var(--yazi-soluk);
   }
 
   .cipler button.aktif {
-    border-color: var(--renk-ana);
     background: var(--renk-ana);
+    border-color: var(--renk-ana);
     color: #fff;
+    font-weight: 600;
   }
 </style>

@@ -1,12 +1,9 @@
 <script lang="ts">
   // Adım 8: Etkinlik detay sayfası — bilet kategorisi ve adet seçimi
-  import { goto } from "$app/navigation";
-  import { tarihYaz, tl } from "$lib/data";
+  import { type Etkinlik, tarihYaz, tl } from "$lib/data";
   import { sepet } from "$lib/sepet.svelte";
-  import type { PageProps } from "./$types";
 
-  let { data }: PageProps = $props();
-  const e = $derived(data.etkinlik);
+  let { etkinlik: e }: { etkinlik: Etkinlik } = $props();
 
   let seciliIndex = $state(0);
   let adet = $state(1);
@@ -14,7 +11,7 @@
 
   function sepeteEkle() {
     sepet.ekle(e, secili, adet);
-    goto("/sepet");
+    window.location.href = "/sepet";
   }
 </script>
 
