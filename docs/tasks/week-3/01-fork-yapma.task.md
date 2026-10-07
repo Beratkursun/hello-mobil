@@ -1,6 +1,6 @@
 # Görev 01 — Projeyi Fork'lama ve İşbirliği Ortamı Kurma
 
-Bu görevde kaynak projeyi kendi GitHub hesabınıza kopyalayacak ve Blackboard üzerinden teslimi gerçekleştireceksiniz. Eğitmen repoya davet edilmez.
+Bu görevde kaynak projeyi kendi GitHub hesabınıza kopyalayacak ve Blackboard üzerinden teslimi gerçekleştireceksiniz. Eğitmen (`keyvanarasteh`) repoya collaborator olarak davet edilir.
 
 ---
 
@@ -25,7 +25,21 @@ Bu görevde kaynak projeyi kendi GitHub hesabınıza kopyalayacak ve Blackboard 
 
 ---
 
-## 3. Blackboard Üzerinden Teslim
+## 3. Eğitmeni Collaborator Olarak Ekleme
+
+Projelerinizin değerlendirilmesi, kod incelemelerinin (code review) yapılması ve yönlendirme sağlanabilmesi için eğitmeni projenize ortak olarak eklemeniz gerekir.
+
+1. Fork ettiğiniz kendi deponuzun ana sayfasına gidin.
+2. Üst sekmedeki **Settings** (Ayarlar) menüsüne tıklayın.
+3. Sol menüden **Collaborators** seçeneğine tıklayın (GitHub şifrenizi doğrulamanızı isteyebilir).
+4. **Add people** (Kişi Ekle) yeşil butonuna tıklayın.
+5. Arama kutusuna eğitmenin GitHub kullanıcı adını yazın: **`keyvanarasteh`**
+6. Çıkan kullanıcıyı seçip **Add keyvanarasteh to this repository** butonuna basın.
+7. Eğitmene bir davet gidecektir; davet gönderildiğinde bu adım tamamlanmış olur.
+
+---
+
+## 4. Blackboard Üzerinden Teslim
 
 Fork ve fikir teslimi **bugünkü ders saatinden önce (15:30)** tamamlanmalıdır.
 
@@ -41,6 +55,7 @@ Fork ve fikir teslimi **bugünkü ders saatinden önce (15:30)** tamamlanmalıd�
 ## ✅ Kontrol Listesi
 
 - [ ] `hello-mobil` deposu kendi GitHub hesabıma fork'landı.
+- [ ] Repo ayarlarından `keyvanarasteh` kullanıcısı Collaborator olarak davet edildi.
 - [ ] GitHub profil linki ve yeni repo linki Blackboard üzerinden iletildi.
 
 ## 🎯 Puan Rubriği (toplam 10 puan)
@@ -49,11 +64,11 @@ Fork ve fikir teslimi **bugünkü ders saatinden önce (15:30)** tamamlanmalıd�
 |---|---|---|
 | Fork ve doğru repo adı | 4 | Kendi hesabınızda `hello-mobil` fork'u var; origin ana repoya bağlı |
 | Blackboard teslimi | 3 | GitHub kullanıcı adı + fork linki Blackboard'a süre içinde gönderildi |
-| Tek başına repo sahipliği | 3 | Repo'da eğitmen davet/collaborator kaydı yok (davet yapılmaz) |
+| Eğitmen collaborator daveti | 3 | Repo Settings > Collaborators'ta `keyvanarasteh` davet edilmiş |
 
 ## Ortak Kurallar (tüm görevler)
 
-- **Katılımcı davetı yok:** Eğitmen (`keyvanarasteh`) repoya contributor/collaborator olarak davet edilmez. Teslim yalnızca Blackboard üzerinden yapılır.
+- **Eğitmen davetı (zorunlu):** Öğrenci, repoya eğitmeni (`keyvanarasteh`) **collaborator** olarak davet eder (Settings > Collaborators > Add people). Teslim Blackboard üzerinden yapılır.
 - **PR sayısı:** Her görev için en az 1 PR açılır (`feature/*` veya `fix/*` dalı). Görev 01.2'de tanımlanan akış zorunludur; doğrudan `master`'a commit yoktur.
 - **Doğrulama kanıtı:** `bun run build` çıktısı (0 hata) ve `bun run tauri dev` ile uygulamanın açıldığının ekran görüntüsü teslime eklenir.
 - **Dil desteği:** Uygulama metinleri TR, EN, AR, FA dillerinde bulunur (RTL: AR ve FA için `dir="rtl"`). Görev içeriği bu dillerden birinde değil ise ilgili görev için İngilizce karşılığı eklenir.
