@@ -38,7 +38,7 @@
 - [Temel Yetenekler](#-temel-yetenekler)
 - [Teknoloji Yığını](#-teknoloji-yığını)
 - [Kurulum ve Çalıştırma](#-kurulum-ve-çalıştırma)
-- [Klasör Mimarisi](docs/klasor-mimarisi.md)
+- [Dokümantasyon](#-dokümantasyon)
 - [Haftalık Görevler](#-haftalık-görevler)
 - [Lisans](#-lisans)
 
@@ -204,26 +204,16 @@ bun run build
 
 ---
 
-## 📂 Klasör Mimarisi
+## 📚 Dokümantasyon
 
-Projenin modül dağılımı, dizin sorumlulukları ve dosya hiyerarşisi için [**`docs/klasor-mimarisi.md`**](docs/klasor-mimarisi.md) dokümanını inceleyin. *(Dokümantasyon kuralı: Dizin yapısı README içinde yinelenmez, tek kaynak olarak `docs/` altında tutulur.)*
-
----
-
-## 📝 Haftalık Görevler
-
-Hafta 3 uzaktan interaktif geliştirme adımları ve görev kılavuzları [`docs/tasks/week-3/`](docs/tasks/week-3/) klasöründe tanımlanmıştır:
-
-1. **[`01-fork-yapma.task.md`](docs/tasks/week-3/01-fork-yapma.task.md):** Projeyi fork'lama, collaborator ekleme ve Blackboard teslimi.
-2. **[`01-pr-merge.task.md`](docs/tasks/week-3/01-pr-merge.task.md):** Feature branch, PR ve Merge disiplini.
-3. **[`02-proje-fikriniz.task.md`](docs/tasks/week-3/02-proje-fikriniz.task.md):** 40 örnek proje arasından seçim ve konsept belirleme.
-4. **[`03-readme.task.md`](docs/tasks/week-3/03-readme.task.md):** Standart kurumsal README.md hazırlama.
-5. **[`04-agents.task.md`](docs/tasks/week-3/04-agents.task.md):** `AGENTS.md`, `CLAUDE.md`, `GEMINI.md` kural mimarisi.
-6. **[`05-branding.task.md`](docs/tasks/week-3/05-branding.task.md):** Renk paleti, logo ve launcher simgeleri.
-7. **[`06-info-pages.task.md`](docs/tasks/week-3/06-info-pages.task.md):** Bilgi sayfaları (`hakkinda`, `iletisim`, `kosullar`, `gizlilik`).
-8. **[`07-hedefler-agac-yapisi.task.md`](docs/tasks/week-3/07-hedefler-agac-yapisi.task.md):** Sayfa ağaç yapısı ve platform matrisi.
-9. **[`08-agents-pro.task.md`](docs/tasks/week-3/08-agents-pro.task.md):** İleri düzey AGENTS.md ve belge indeksleme.
-10. **[`09-progress-batch-01.task.md`](docs/tasks/week-3/09-progress-batch-01.task.md):** 1. Aşama teslim kontrol matrisi ve git tag (`v0.1.0-batch-01`).
+- [Klasör mimarisi](docs/klasor-mimarisi.md)
+- [Branding](docs/branding.md)
+- [Mimari ağaç](docs/mimari-agac.md)
+- [Proje fikri](docs/proje-fikri.md)
+- [Kurallar](docs/kurallar.md)
+- [Kaynaklar](docs/kaynaklar.md)
+- [Teslim](docs/teslim.md)
+- [Haftalık görevler](docs/tasks/week-3/)
 
 ---
 
