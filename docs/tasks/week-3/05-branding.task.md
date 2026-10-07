@@ -146,12 +146,11 @@ Kaynak: tek bir `app-icon.png` (1024×1024, şeffaf arka plan). Renkler yalnızc
 
 `docs/branding.md` içinde her token için şu sütunlar bulunmalı: **Token adı · Açık (light) hex · Koyu (dark) hex · Kullanım yeri · Kontrast oranı (metin/zemin)**. `app.css` içinde aynı isimler `:root` ve `:root[data-tema="gece"]` altında birebir tanımlanır.
 
-## 📚 Referanslar
+## 📚 Kaynaklar
 
-Bu görevde aşağıdaki resmi kaynaklardan yararlanın:
-
-- Tasarım temelleri (Figma): https://www.figma.com/resource-library/design-basics/
-- Apple uygulama ikonları: https://developer.apple.com/design/human-interface-guidelines/app-icons
-- Apple Human Interface Guidelines: https://developer.apple.com/design/human-interface-guidelines
-- Apple tipografi: https://developer.apple.com/design/human-interface-guidelines/typography
-- Material 3 tipografi: https://m3.material.io/styles/typography/overview
+- **Kaynak repo:** [github.com/keyvanarasteh/hello-mobil](https://github.com/keyvanarasteh/hello-mobil)
+- **Tasarım temelleri (Figma):** [figma.com/resource-library/design-basics](https://www.figma.com/resource-library/design-basics/)
+- **Apple HIG:** [developer.apple.com/design/human-interface-guidelines](https://developer.apple.com/design/human-interface-guidelines)
+- **Apple uygulama ikonları:** [app-icons](https://developer.apple.com/design/human-interface-guidelines/app-icons) · **Düzen:** [layout](https://developer.apple.com/design/human-interface-guidelines/layout)
+- **Responsive (web):** [MDN responsive design](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design)
+- **Tipografi:** [Apple typography](https://developer.apple.com/design/human-interface-guidelines/typography) · [Material 3 typography](https://m3.material.io/styles/typography/overview)

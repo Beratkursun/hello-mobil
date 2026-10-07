@@ -72,28 +72,28 @@ Aşağıdaki şablonu kopyalayarak kendi deponuzun ana dizinindeki `README.md` d
 
 <div align="center">
 
-[![İSÜ](https://img.shields.io/badge/İSÜ-İSTİNYE_ÜNİVERSİTESİ-0080BB?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.istinye.edu.tr)
-[![MYO063](https://img.shields.io/badge/MYO063-Mobil%20Programlama-FF6F00?style=for-the-badge&logo=dart&logoColor=white)](#)
-[![Dönem](https://img.shields.io/badge/Dönem-2026--2027%20Güz-007ACC?style=for-the-badge)](#)
+[![İSÜ](https://img.shields.io/badge/İSTİNYE_ÜNİVERSİTESİ-İSTANBUL-0080BB?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.istinye.edu.tr)
+[![MYO063](https://img.shields.io/badge/MYO063-Mobil_Programlama-FF6F00?style=for-the-badge&logo=dart&logoColor=white)](#)
+[![Dönem](https://img.shields.io/badge/Dönem-2026--2027_Güz-007ACC?style=for-the-badge)](#)
 [![Qrofessor](https://img.shields.io/badge/Qrofessor-qrofessor.com-4361EE?style=for-the-badge&logo=google-chrome&logoColor=white)](https://qrofessor.com)
-[![Telegram](https://img.shields.io/badge/Telegram-App%20Development%202026-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/+w1EVvAU65CQ3ODA0)
 
 </div>
 
 <br>
 
-| Kategori | Parametre | Değer / Bilgi | Hızlı Erişim |
-|:---|:---|:---|:---:|
-| 🏛️ **Kurum** | Üniversite | **İstinye Üniversitesi** *(İSÜ · İstanbul)* | [🌐 **istinye.edu.tr** ↗](https://www.istinye.edu.tr) |
-| | Birim / Program | Meslek Yüksekokulu — Bilişim Güvenliği Teknolojisi | [MYO Portalı ↗](https://myo.istinye.edu.tr) |
-| 📚 **Ders** | Ders Kodu & Adı | `MYO063` · **Mobil Programlama** *(App Development)* | [Müfredat](docs/klasor-mimarisi.md) |
-| | Akademik Dönem | `2026-2027 Güz` | — |
-| | Ders Saati | Her Çarşamba `15:30 – 17:10` *(Haftalık 2 Saat)* | — |
-| | Derslik & Lab | **T-1B03** *(PC Laboratuvarı · Topkapı Kampüsü)* | Kampüs Planı |
-| 🌐 **Portallar** | Blackboard LMS | Kurs Kodu: `2026–2027–1–11283–1` | [Blackboard ↗](https://istinye.blackboard.com) |
-| | Kişisel / Platform | **Qrofessor Akademik Hub** | [🚀 **qrofessor.com** ↗](https://qrofessor.com) |
-| | Topluluk | **App Development - 2026** | [Telegram Kanalı ↗](https://t.me/+w1EVvAU65CQ3ODA0) |
-| | Kaynak Depo | `keyvanarasteh/hello-mobil` | [GitHub Repo ↗](https://github.com/keyvanarasteh/hello-mobil) |
+| Bilgi | Detay |
+|:---|:---|
+| **Kurum** | [**İstinye Üniversitesi**](https://www.istinye.edu.tr) &nbsp;·&nbsp; [**www.istinye.edu.tr ↗**](https://www.istinye.edu.tr) |
+| **Birim / Program** | **Meslek Yüksekokulu** — Bilişim Güvenliği Teknolojisi |
+| **Ders Kodu & Adı** | `MYO063` — **Mobil Programlama** *(App Development)* |
+| **Dönem** | `2026-2027 Güz` |
+| **Ders Saati & Derslik** | Her Çarşamba `15:30 – 17:10` &nbsp;·&nbsp; **T-1B03** *(PC Lab.)* |
+| **Öğretim Görevlisi** | **Öğr. Gör. Keyvan Arasteh Abbasabad**<br>([Web: qrofessor.com ↗](https://qrofessor.com) &nbsp;·&nbsp; [İSÜ Profil ↗](https://www.istinye.edu.tr) &nbsp;·&nbsp; [GitHub ↗](https://github.com/keyvanarasteh) &nbsp;·&nbsp; [LinkedIn ↗](https://www.linkedin.com/in/keyvanarasteh/)) |
+| **Eğitim Platformu** | [**qrofessor.com ↗**](https://qrofessor.com) *(Qrofessor Akademik Hub)* |
+| **Blackboard Kursu** | Kurs Kodu: `2026–2027–1–11283–1` |
+| **Kaynak Depo** | [`keyvanarasteh/hello-mobil`](https://github.com/keyvanarasteh/hello-mobil) |
+| **Telegram Grubu** | `App Development - 2026` *(Ders içi kapalı grup · Bağlantı sınıfta paylaşılır)* |
+| **Geliştirici / Öğrenci** | *`[Adınız Soyadınız — Öğrenci No — Şube 1]`* &nbsp;·&nbsp; [`docs/proje-fikri.md`](docs/proje-fikri.md) |
 
 <br>
 
@@ -226,3 +226,12 @@ Bu proje [MIT Lisansı](LICENSE) kapsamında geliştirilmiştir.
 - **Doğrulama kanıtı:** `bun run build` çıktısı (0 hata) ve `bun run tauri dev` ile uygulamanın açıldığının ekran görüntüsü teslime eklenir.
 - **Dil desteği:** Uygulama metinleri TR, EN, AR, FA dillerinde bulunur (RTL: AR ve FA için `dir="rtl"`). Görev içeriği bu dillerden birinde değil ise ilgili görev için İngilizce karşılığı eklenir.
 - **Dokümantasyon:** Her kural tek bir `docs/*.md` dosyasında yaşar; `README.md` ve `AGENTS.md` yalnızca link verir (bkz. Görev 04).
+
+## 📚 Kaynaklar
+
+- **Kaynak repo:** [github.com/keyvanarasteh/hello-mobil](https://github.com/keyvanarasteh/hello-mobil)
+- **Tasarım temelleri (Figma):** [figma.com/resource-library/design-basics](https://www.figma.com/resource-library/design-basics/)
+- **Apple HIG:** [developer.apple.com/design/human-interface-guidelines](https://developer.apple.com/design/human-interface-guidelines)
+- **Apple uygulama ikonları:** [app-icons](https://developer.apple.com/design/human-interface-guidelines/app-icons) · **Düzen:** [layout](https://developer.apple.com/design/human-interface-guidelines/layout)
+- **Responsive (web):** [MDN responsive design](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design)
+- **Tipografi:** [Apple typography](https://developer.apple.com/design/human-interface-guidelines/typography) · [Material 3 typography](https://m3.material.io/styles/typography/overview)
