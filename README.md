@@ -37,7 +37,7 @@
 - [Mimari ve Çoklu Çatı (Multi-Framework)](#-mimari-ve-çoklu-çatı-multi-framework)
 - [Temel Yetenekler](#-temel-yetenekler)
 - [Teknoloji Yığını](#-teknoloji-yığını)
-- [Kurulum ve Çalıştırma](#-kurulum-ve-çalıştırma)
+- [Kurulum ve Çalıştırma](docs/kurulum.md)
 - [Dokümantasyon](#-dokümantasyon)
 - [Haftalık Görevler](#-haftalık-görevler)
 - [Lisans](#-lisans)
