@@ -14,45 +14,17 @@ Bir yazılım deposunun vitrini `README.md` dosyasıdır. Projeyi inceleyen eği
 
 ---
 
-## 2. Kopyalanabilir README.md Şablonu
+## 2. Görev: Ana README.md'yi Patch Edin
 
-Aşağıdaki şablonu kopyalayarak kendi deponuzun ana dizinindeki `README.md` dosyasına yapıştırın ve köşeli parantez `[...]` içindeki yerleri kendi proje bilgilerinize göre doldurun.
+Şablon verilmez. Eğitmen deposundaki [`README.md`](https://github.com/keyvanarasteh/hello-mobil/blob/master/README.md) dosyasını fork'unuzda inceleyin ve kendi projenize uyarlayarak bir **patch / PR** ile düzeltin:
 
-````markdown
-# [Proje Adı]
+1. Başlık ve tek cümlelik açıklamayı kendi projenize göre değiştirin.
+2. **Öğrenci** satırına adınızı ve öğrenci numaranızı yazın.
+3. Teknoloji ve özellik bölümlerini kendi uygulamanıza göre güncelleyin.
+4. Kurulum komutlarını kendi repo adresinizle ve gerçekten çalışır halde yazın.
+5. Bağlantıların hepsinin çalıştığını kontrol edin.
 
-> [Tek cümlelik açıklama]
-
-![Tauri v2](https://img.shields.io/badge/Tauri-v2-FFC131?logo=tauri&logoColor=white) ![Astro](https://img.shields.io/badge/Astro-v5-BC52EE?logo=astro&logoColor=white) ![Svelte 5](https://img.shields.io/badge/Svelte-5-FF3E00?logo=svelte&logoColor=white)
-
-**İstinye Üniversitesi · MYO063 Mobil Programlama · 2026-2027 Güz**
-**Öğrenci:** [Ad Soyad] · [Öğrenci No]
-
-## İçindekiler
-- [Hakkında](#hakkında)
-- [Özellikler](#özellikler)
-- [Kurulum](#kurulum)
-- [Klasör yapısı](docs/klasor-mimarisi.md)
-- [Lisans](#lisans)
-
-## Hakkında
-[Problem, kullanıcı ve çözüm: 2–3 cümle.]
-
-## Özellikler
-- **[Özellik]** — [kısa açıklama]
-
-## Kurulum
-```bash
-git clone https://github.com/[kullanici]/[repo].git && cd [repo]
-bun install
-bun run dev         # web
-bun run tauri dev   # masaüstü
-bun run build       # derleme (0 hata)
-```
-
-## Lisans
-[MIT](LICENSE)
-````
+Yaptığınız değişikliği tek bir PR olarak açın (`docs/readme-patch` gibi bir dal) ve Blackboard'a PR linkini ekleyin.
 
 ---
 
