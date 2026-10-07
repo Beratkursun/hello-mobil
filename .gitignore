@@ -10,3 +10,7 @@ dist
 !.env.example
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Raw task drafts
+docs/tasks/**/raw/
+**/raw/
